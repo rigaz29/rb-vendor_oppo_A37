@@ -17,7 +17,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
     vendor/oppo/A37/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
     vendor/oppo/A37/proprietary/lib/libvpplibrary.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvpplibrary.so \
-    vendor/oppo/A37/proprietary/lib/sensors.a6000.so:$(TARGET_COPY_OUT_SYSTEM)/lib/sensors.a6000.so \
     vendor/oppo/A37/proprietary/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/oppo/A37/proprietary/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/oppo/A37/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -264,6 +263,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_imx179_15399.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx179_15399.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_omnivision_5648_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_omnivision_5648_eeprom.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_ov5648_15035.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5648_15035.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_ov5648_15399.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5648_15399.so \
@@ -308,6 +308,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd.so \
     vendor/oppo/A37/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
     vendor/oppo/A37/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/oppo/A37/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
     vendor/oppo/A37/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
     vendor/oppo/A37/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so \
