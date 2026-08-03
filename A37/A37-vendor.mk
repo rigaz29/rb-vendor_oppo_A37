@@ -335,6 +335,5 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     qcrilmsgtunnel \
     TimeService \
-    ims \
     shutdownlistener \
     imscmlibrary
