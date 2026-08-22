@@ -328,11 +328,9 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@1.0_vendor.so
 
 PRODUCT_PACKAGES += \
-    libTimeService \
     libloc_api_v02 \
     libloc_ds_api \
     libtime_genoff \
     qcrilmsgtunnel \
-    TimeService \
     shutdownlistener \
     imscmlibrary
