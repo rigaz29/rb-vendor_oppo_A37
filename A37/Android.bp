@@ -44,12 +44,17 @@ cc_prebuilt_library_shared {
 	strip: {
 		none: true,
 	},
+	// Dua arch, alasan sama dengan libloc_api_v02 di atas: ia dituntut
+	// vendor/lib/libloc_api_v02.so lewat dlopen. 28 KB untuk menutup rantai.
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libloc_ds_api.so"],
 		},
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libloc_ds_api.so"],
+		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
