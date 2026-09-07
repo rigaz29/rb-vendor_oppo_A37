@@ -15,12 +15,24 @@ cc_prebuilt_library_shared {
 	strip: {
 		none: true,
 	},
+	// DUA ARCH. Varian 32-bit ditambahkan 7 September 2026: konsumennya di
+	// vendor/lib ada tiga dan semuanya nyata --
+	//   DT_NEEDED  libizat_core.so, liblbs_core.so
+	//   dlopen     libloc_core.so
+	// Tanpa ini seluruh rantai GPS 32-bit putus.
+	//
+	// Perhatikan: blob ini modul Soong, bukan entri PRODUCT_COPY_FILES, jadi
+	// menambahkan barisnya ke A37-vendor.mk TIDAK berpengaruh sama sekali --
+	// kekeliruan yang sempat terjadi dan baru ketahuan saat memeriksa isi image.
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libloc_api_v02.so"],
 		},
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libloc_api_v02.so"],
+		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
